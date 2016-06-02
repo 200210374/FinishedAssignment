@@ -12,6 +12,7 @@
         <asp:TextBox runat="server" Cssclass="form-control" ID="FirstNameTextBox" placeholder="First Name" required="true"></asp:TextBox> 
        <asp:RequiredFieldValidator CssClass="alert-danger" Display="Dynamic" ID="RequiredFieldValidator1" runat="server" ErrorMessage="First name is required" ControlToValidate="FirstNameTextBox" SetFocusOnError="true"></asp:RequiredFieldValidator>  
           
+
                  </div>
          <div class="form-group">
         <label class="control-label" for="LastNameTextBox">Last Name</label>
