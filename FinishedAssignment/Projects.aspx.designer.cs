@@ -11,7 +11,7 @@ namespace FinishedAssignment
 {
 
 
-    public partial class Contact
+    public partial class Projects
     {
     }
 }

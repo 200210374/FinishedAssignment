@@ -1,50 +1,45 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="site.master.cs" Inherits="FinishedAssignment.sitecontact" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="sitecontact.master.cs" Inherits="FinishedAssignment.sitecontact" %>
+
 <%@ Register Src="~/navbar.ascx" TagName="Navbar" TagPrefix="nav" %>
-<!DOCTYPE html>
+<html>
 
-
-
-<html lang="en">
-<head runat="server">
+    <head runat="server">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
-    <!--css styles-->
+    <!--css-->
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
         <link href="Content/app.css" rel="stylesheet" />
-    <link href="Content/cssStyleSheet.css" rel="stylesheet" />
-    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    <asp:ContentPlaceHolder ID="MasterContent" runat="server">
     </asp:ContentPlaceHolder>
 </head>
+
 <body>
-    <form id="form2" runat="server">
-         <h1 style="text-align:center">Brandon Roy 200210374</h1>
+          <!-- As part of a header this is shown on every site thats linked to this master page  -->
+   <h1 style="text-align:center">Brandon Roy 200210374</h1>
     <h3 style="text-align:center">
         comp2007Assignment.azureweb
         This site is for assignment1
     </h3>
-        <nav:Navbar runat="server"></nav:Navbar>
+
    
+        <nav:Navbar runat="server"></nav:Navbar>
     <div>
-        <asp:ContentPlaceHolder ID="MainContent" runat="server">
-        
-        </asp:ContentPlaceHolder>
+     
     </div>
-    </form>
+   
+
+
     <!--java-->
     <script src="Scripts/jquery-2.2.3.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/app.js"></script>
-
-
-
+<asp:ContentPlaceHolder id="Contact" runat="server">
+</asp:ContentPlaceHolder>
 </body>
+    
+
 </html>
-
-
-
-
-

@@ -11,7 +11,7 @@ namespace FinishedAssignment
 {
 
 
-    public partial class About
+    public partial class WebForm1
     {
     }
 }
